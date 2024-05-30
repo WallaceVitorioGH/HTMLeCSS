@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 8px;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cIdade{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
+
 <body>
     <table>
+        <colgroup>
+            <col class="cNome">
+            <col class="">
+            <col class="cIdade">
+            <col class="">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -20,6 +54,31 @@
             <td>25</td>
             <td>jornalista</td>
         </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Cozinheiro</td>
+        </tr>
+        <tr>
+            <td>Rute</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Cabeleireira</td>
+        </tr>
+        <tr>
+            <td>Andreia</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Auxiliar</td>
+        </tr>
+        <tr>
+            <td>Neymar</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Atleta</td>
+        </tr>
     </table>
 </body>
+
 </html>
